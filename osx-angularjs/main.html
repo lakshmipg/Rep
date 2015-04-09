@@ -1,0 +1,54 @@
+<html ng-app='testapp'>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>TestApp</title>
+
+
+<link rel="stylesheet" type="text/css" href="osx/css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="osx/css/osx-window.css">
+<link rel="stylesheet" type="text/css" href="osx/css/osx-common.css">
+<link rel="stylesheet" type="text/css" href="osx/css/osx-dock.css">
+<link rel="stylesheet" type="text/css" href="osx/css/osx-toolbar.css">
+
+  
+<script type="text/javascript" src="angular.min.js"></script>
+<script src='angular-route.min.js'></script>
+  <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="osx/osx-utils.min.js"></script>
+<script type="text/javascript" src="osx/osx-toolbar.min.js"></script> 
+<script type="text/javascript" src="osx/osx-window.min.js"></script>
+<script type="text/javascript" src="osx/osx-dock.min.js"></script>
+<script type="text/javascript" src="osx/osx-message.min.js"></script>
+<script type="text/javascript" src="controller1.js"> </script>
+<script type="text/javascript" src="controller2.js"> </script>
+<script type="text/javascript" src="controller.js"> </script>
+<script type="text/javascript" src="app.js">  
+</script>
+
+</head>
+<body ng-controller="crtl">
+    <h1>Testing</h1>
+    <div ng-view></div>
+    
+<table class="osx-dock-outer">
+    <tr>
+        <td align="center">
+            <table class="osx-dock">
+                <tr>
+                    <td class="before" width="38">&nbsp;&nbsp;</td>
+                    <td class="mid" >
+                        <img id="page1" src="./page1.jpg" titleProp="Page1" ng-click="page1Func()"/>
+                        <img id="page2" src="./page2.jpg" titleProp="Page2" ng-click="page2Func()"/>                        
+                        <span class="titleProp"></span>
+                    </td>
+                    <td class="after" width="38">&nbsp;&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
